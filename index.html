@@ -5,45 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Práctico Final</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body class="bg-gradient-to-r from-violet-500 to-violet-900 font-mono font-bold">
+<body class="bg-gradient-to-r from-violet-500 to-violet-900 font-mono">
     
-    <header>
+    <header class="fixed top-0 left-0 w-full ">
         <div class="text-white px-6 py-4 flex justify-between items-center  text-#1E293B-500  bg-violet-700">
-        <div><h1 class="text-2xl">MauroF.</h1></div>
-        <div class="">
-            <nav>
-                <a href=""class="duration-500 hover:text-gray-900 rounded px-3">Sobre Mí</a>
-                <a href=""class="duration-500 hover:text-gray-900 rounded px-3">Projectos</a>
-                <a href=""class="duration-500 hover:text-gray-900 rounded px-3">Habilidades</a>
-                <a href=""class="duration-500 hover:text-gray-900 rounded px-3"">Contacto</a>
+        <div><h1 class="text-2xl font-bold">MauroF.</h1></div>
+            <nav class="font-bold">
+                <a href="#sobre" class=" duration-500 hover:text-gray-900 rounded px-3">Sobre Mí</a>
+                <a href="#projectos" class="duration-500 hover:text-gray-900 rounded px-3">Projectos</a>
+                <a href="#habilidades" class="duration-500 hover:text-gray-900 rounded px-3">Habilidades</a>
+                <a href="#experiencia" class="duration-500 hover:text-gray-900 rounded px-3">Experiencia</a>
+                <a href="#contacto" class="duration-500 hover:text-gray-900 rounded px-3"">Contacto</a>
             </nav>
-        </div>
         </div>  
-        <div class="flex flex-col gap-0">
-                <div class="ml-28 text-2xl mt-10 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl"><h2>Sobre Mí</h2></div>
-                <div class="mb-40 flex justify-between items-center text-white max-w-7xl mx-auto py-8 px-6">
-                    <div class="mr-20 max-w-2xl"><h3 class="text-1xl">Hola<span class="text-violet-900">,</span>Soy Mauro Fernández</h3>
-                        <h3 class="text-4xl py-2"><span class="text-violet-900">Full</span>stack Developer</h3><p class="text-sm">Tengo 25 años de edad<span class="text-violet-900">,</span> vivo en Mendoza<span class="text-violet-900">,</span> Argentina<span class="text-violet-900">,</span> 
-                            estoy comenzando a dar mis primeros pasos como desarrollador junior<span class="text-violet-900">,</span>
-                            soy un entusiasta de las websites y la meta es seguir aprendiendo<span class="text-violet-900">.</span></p>
-                    </div>
-                <div class="mr-40 w-40 h-60"> <img src="img/Imagen de presentación.jpg" alt="" class="rounded-full border-2 shadow-lg p-2  transform transition duration-700 hover:scale-110 hover:brightness-90"></div>
-            </div>
-        </div>
-        <hr class="border-2 border-violet-900 rounded max-w-7xl mx-auto mb-8    ">
+        
     </header>
 
     <main class="text-white">
-        <div class="ml-28 text-2xl mt-10 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl"><h2>Projectos</h2></div>
+        <div class="flex flex-col gap-0">
 
-        <div class="border-3">
-            <div class=" border-2 shadow-lg max-w-2xl"><h4>Tarjeta personal</h4></div>
-            <div></div>
-            <div></div>
+            <!-- Sobre Mí -->
+
+            <section class="mt-20" id="sobre">
+                <div class="ml-28 text-2xl mt-20 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl"><h2>Sobre Mí</h2></div>
+                <div class="mb-40 flex justify-between items-center text-white max-w-7xl mx-auto py-8 px-6">
+                    <div class="mr-20 max-w-2xl font-bold"><h3 class="text-1xl">Hola<span class="text-violet-900">,</span>Soy Mauro Fernández</h3>
+                        <h3 class="text-4xl py-2"><span class="text-violet-900">Full</span>stack Developer</h3><p class="text-sm">Tengo 25 años de edad<span class="text-violet-900">,</span> vivo en Mendoza<span class="text-violet-900">,</span> Argentina<span class="text-violet-900">,</span> 
+                            estoy comenzando a dar mis primeros pasos como desarrollador junior en FullStack<span class="text-violet-900">,</span>
+                            soy un entusiasta de las websites y la meta es seguir aprendiendo<span class="text-violet-900">.</span></p>
+                    </div>
+                <div class="mr-40 w-40 h-60"> <img src="img/Imagen de presentación.jpg" alt="" class="rounded-full border-2 shadow-lg p-2 transform transition duration-700 hover:scale-110 hover:brightness-90"></div>
+            </div>
+            </section>
         </div>
-    </main>
-    <footer></footer>
+        
+        <hr class="border-2 border-violet-900 rounded max-w-7xl mx-auto mb-8    ">
+        
+        <!-- Projectos -->
+
+        <section id="projectos" class="mt-16">
+        <div class="ml-28 text-2xl mt-20 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl font-bold"><h2>Projectos</h2></div>
+
+        <div class="flex justify-center flex-col">
+            <div class=" border-2 border-violet-900 rounded shadow-lg max-w-4xl my-15 mx-auto p-2 flex justify-center items-center"> 
+                <h4 class="text-2xl font-bold">Tarjeta de presentación</h4>
+            </div>   
+            <div class="mb-5 flex flex-row justify-around">
+                <div class="my-5 max-w-md"> <img src="img/Tarjeta de presentación.png" alt="" class="rounded-md hover:scale-110 hover:transition duration-700"></div>
+                <div class="my-5 max-w-md ml-40"><p>La tarjeta personal fue mí primer proyecto que desarrolle con HTML<span class="text-violet-900">,</span> al principio me costo poder hacer las dimensiones necesarias<span class="text-violet-900">,</span> para que quedara prolijo<span class="text-violet-900">.</span>
+                    <hr class="border-0">Como también tenia un conocimiento muy básico en CSS la elección de los colores y el diseño no quedo como esperaba<span class="text-violet-900">,</span> pero aun así quede satisfecho de desarrollar la primera página web propia<span class="text-violet-900">.</span></p>
+                    <hr class="mt-15 border-0"> <a href="https://mauroaf24.github.io/tarjeta-presentacion/" 
+                    class="border-2 border-violet-900 rounded bg-violet-900 shadow-lg p-2 transform transition duration-700 hover:scale-110">
+                    link de la página</a></div>
+            </div>
+            </div>
+        </div> 
+        </section>
+        
+        <hr class="border-2 border-violet-900 rounded max-w-2xl mx-auto mb-8">
+            
+        
+        <div class="flex justify-center flex-col">
+            <div class=" border-2 border-violet-900 rounded shadow-lg max-w-4xl my-15 mx-auto p-2 flex justify-center items-center">
+                <h4 class="text-2xl font-bold">Menú Digital</h4>
+            </div>
+            <div class="mb-5 flex flex-row justify-around">
+                <div class="my-5 max-w-md mr-25"><p>La idea de este proyecto era aprender mucho más sobre las estructuras del HTML<span class="text-violet-900">,</span> y saber como acomodar cada contenedor con CSS<span class="text-violet-900">.</span></p>
+                    <hr class="mt-15 border-0"> <a href="https://mauroaf24.github.io/menu-digital/" 
+                    class="border-2 border-violet-900 rounded bg-violet-900 shadow-lg shadow-white-500 p-2">
+                    link de la página</a>
+                    </div>
+                <div class=""> 
+                    <img src="img/menu1.png" alt="" class="max-w-4xl h-60 border-4 border-white rounded-md  hover:scale-110 hover:z-20 transition duration-700  inline-block">
+                </div>
+            </div>
+        </div>
+        
+        <hr class="border-2 border-violet-900 rounded max-w-2xl mx-auto mb-8">
+            
+        <div class="flex justify-center flex-col">
+            <div class=" border-2 border-violet-900 rounded shadow-lg max-w-4xl my-15 mx-auto p-2 flex justify-center items-center">
+                <h4 class="text-2xl font-bold">We are creative</h4>
+            </div>
+            <div class="mb-5 flex flex-row justify-around">
+                <div class="my-5 max-w-md"> <img src="img/we are creative.png" alt="" class="rounded-md hover:scale-110 hover:z-20 transition duration-700"></div>
+                <div class="my-5 max-w-md ml-40">
+                    <p>La creación de esta página tenía como fín replicarla<span class="text-violet-900">,</span>
+                        pero teniamos que hacerla todo desde cero el HTML<span class="text-violet-900">,</span>
+                        como<span class="text-violet-900">,</span> 
+                        el CSS<span class="text-violet-900">,</span> 
+                        la idea era profundizar más en CSS con la meta de aprender sobre los estilos que tiene para ofrecer
+                        <span class="text-violet-900">.</span>
+                    <hr class="mt-15 border-0"> <a href="https://mauroaf24.github.io/tp3-flexbox-clon/" 
+                    class="border-2 border-violet-900 rounded bg-violet-900 shadow-lg p-2 transform transition duration-700 hover:scale-110">
+                    link de la página</a></div>
+            </div>
+        </div>        
+        
+        <hr class="border-2 border-violet-900 rounded max-w-7xl mx-auto mb-8">
+
+        <section id="habilidades" class="mt-20">
+        <div class="ml-28 text-2xl mt-10 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl font-bold"><h2>Habilidades</h2></div>
+            <div class="m-20 flex justify-around">
+                <div><h4 class="border-2 border-violet-900 shadow-lg rounded-md w-30 my-5">Front-end</h4>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">HTML</h5> <hr class="w-20 m-auto border-2 border-green-400 rounded-full ml-13"></div>
+                    <div class="flex"><h5 class="mx-2 border-b-2 border-violet-700 rounded">CSS</h5> <hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-13"></div>
+                    <div class="flex"><h5 class="mx-2 border-b-2 border-violet-700 rounded">JS</h5><hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-15"></div>
+                    <div class="flex"><h5 class="mx-2 border-b-2 border-violet-700 rounded">Tailwind</h5><div class="mx-auto flex"></div><hr class="w-20 m-auto border-2 border-green-400 rounded ml-2"></div>
+                    <div class="flex"><h5 class="mx-2 border-b-2 border-violet-700 rounded">Bootstrap</h5><hr class="w-20 m-auto border-2 border-green-400 rounded"></div>
+                </div>
+                
+                <div><h4 class="border-2 border-violet-900 shadow-lg rounded-md w-30 my-5">Back-end</h4>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">Java</h5><hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-8"></div>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">Node.js</h5><hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-1"></div>
+                    <div class=" flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">My SQL</h5><hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-3"></div>
+                </div>
+                <div><h4 class="border-2 border-violet-900 shadow-lg rounded-md w-30 my-5">Web-desing</h4>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">UI/UX</h5><hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-28"></div>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">Diseño responsivo</h5><hr class="w-15 m-auto border-2 border-yellow-400 rounded ml-2"></div>
+                </div>
+                <div ><h4 class="border-2 border-violet-900 shadow-lg rounded-md w-30 my-2">Habilidades blandas</h4>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">Comunicación</h5><hr class="w-20 m-auto border-2 border-green-400 rounded-full "></div>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded">Liderazgo</h5><hr class="w-20 m-auto border-2 border-green-400 rounded-full ml-7"></div>
+                    <div class="flex"><h5 class="mx-1 border-b-2 border-violet-700 rounded"></h5></div>
+                </div>
+            </div>    
+        </div>
+        </section>
+        
+        <hr class="border-2 border-violet-900 rounded max-w-7xl mx-auto mb-8">
+
+        <section id="experiencia">
+                    <div class=" mt-16 ml-28 text-2xl mt-10 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl font-bold"><h2>Experiencia</h2></div>
+                    <div class="flex flex-col my-15"><h5 class="mx-auto text-2xl border-b-2 border-violet-900 rounded-6">Curso Full-Stack</h5>
+                        <h6 class="mx-auto mb-3 text-gray-900">Estudiante-2025</h6>
+                        <p class="mx-auto">Desarrollo del conocimiento de los lenguajes, conceptos, frameworks y herramientas.</p>
+                    </div>
+        </section>
+
+        <hr class="border-2 border-violet-900 rounded max-w-7xl mx-auto mb-8">
+
+
+        <!-- Contacto -->
+        
+        <section id="contacto">
+        <div class="ml-28 text-2xl mt-10 text-white border-b-2 border-l-2 border-violet-900 px-2 rounded max-w-xl font-bold"><h2>Contacto</h2></div>
+            <div class="m-auto max-w-md h-110 mt-10">
+                <form action="" class="flex flex-col gap-2 p-5">
+                    <h5 class="text-2xl">Formulario de contacto</h5>
+                    <label for="" class="text-md">Nombre Completo:</label>
+                    <input type="text" placeholder="Ingrese su nombre" class="border-2 border-white-900 rounded-md p-2 bg-gray-700">
+                    <label for="" class="text-md">Correo Electronico:</label>
+                    <input type="email" placeholder="Ingrese su correo" class="border-2 border-white-900 rounded-md p-2 bg-gray-700">
+                    <label for="" class="text-md">Mensaje:</label>
+                    <textarea name="mensaje" id="" class="border-2 border-white-900 rounded-md pb-16 pl-2 pt-2 pr-2 bg-gray-700" placeholder="Ingrese su mensaje"></textarea>
+                    <button type="submit" class="border-2 border-white-900 rounded-md m-auto mx-20 my-5 bg-violet-700 p-2 hover:bg-violet-900 transition duration-700 font-bold">Enviar</button>
+                </form>
+            </div>
+            </section>
+    </main> 
+    
+    <footer class="text-white bg-violet-900 h-15 mt-10 flex flex-nowrap justify-around">
+        <ul class="w-40 flex justify-between m-auto">
+            <li><a href="mailto:mf149981@gmail.com" class="hover:text-gray-900 duration-700">
+                <i class="bi bi-envelope"></i></a></li>
+            <li><a href="https://www.instagram.com/maurofernandez00/" class="hover:text-gray-900 duration-700"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://github.com/" class="hover:text-gray-900 duration-700"><i class="bi bi-github"></i></a></li>
+        </ul>
+    </footer>
     
     <script src="js/script.js"></script>
 </body>
